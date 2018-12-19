@@ -1,3 +1,9 @@
 spring:
-  profiles:
-    active: test
+  application:
+    name: hello-service
+eureka:
+  client:
+    serviceUrl:
+     defaultZone: http://localhost:1111/eureka/
+server:
+  port: 8083
